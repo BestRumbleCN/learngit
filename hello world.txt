@@ -22,4 +22,10 @@
 		git reset --hard <versionNO> versionNO可以就是前几位
 	3.查看命令历史
 		git reflog
+
+四、工作区与暂存区
+	1. 可以简单的把一个git项目分成两部分 工作区、版本库（.git）
+	2. 工作区就是我们平时写的代码,如hello world.txt
+	3. 版本库分为 暂存区（stage）和分支（branch）
+	4. git add 工作区→暂存区 git commit 暂存区→分支
 		
