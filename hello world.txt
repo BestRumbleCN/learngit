@@ -60,4 +60,13 @@
 	2. 从远程库克隆
 		git clone https://github.com/BestRumbleCN/learngit.git
 		
+八、分支操作
+	1.查看分支 				git branch
+	2.创建分支 				git branch <name>
+	3.切换分支 				git checkout <name>
+	4.合并某分支到当前分支  git merge <name>
+	5.删除分支				git branch -d <name>
+
+		
+		
 		
