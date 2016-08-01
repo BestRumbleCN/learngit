@@ -73,6 +73,17 @@
 十、分支策略
 	尽量不适用Fast Forward模式，通过命令参数（--no-ff）
 	git merge --no-ff -m "merge with no-ff" dev
+
+十一、Bug分支
+	1.将当前工作现场储藏
+		git stash
+	2.创建bug分支 修改 提交到主干 删除bug分支
+	3.恢复原工作现场
+		1.git stash apply（stash内容并不删除，git stash drap 删除）
+		2.git stash pop（恢复并删除stash）
+	4.可多次stash，恢复的时候使用 git stash list 查看，
+	  恢复指定stash使用 git stash apply stash{0}
+	
 		
 		
 		
