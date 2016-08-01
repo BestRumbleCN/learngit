@@ -67,6 +67,8 @@
 	4.合并某分支到当前分支  git merge <name>
 	5.删除分支				git branch -d <name>
 
+九、解决冲突
+	git log --graph 可以看到分支合并图
 		
 		
 		
