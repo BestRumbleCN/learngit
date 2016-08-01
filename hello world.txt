@@ -11,3 +11,15 @@
 		查看仓库当前状态。
 	2. git diff <filename>
 		查看具体文件修改内容
+		
+三、版本回退
+	1. 查看提交历史
+		git log
+		git log --pretty=oneline
+	2. 回退版本
+		git reset --hard^ ^表示回退到上一个版本 有几个^就表示回退到上几个版本
+		git reset --hard~100 回退到上
+		git reset --hard <versionNO> versionNO可以就是前几位
+	3.查看命令历史
+		git reflog
+		
