@@ -1,8 +1,13 @@
-
 一、git hello world
 	1. git init 创建一个git项目,.git文件。
 	2. git add <files>
 		2.1 git add hello.txt 单文件添加
 		2.2 git add 1.txt 2.txt  多文件添加
 		2.3 git add . 添加全部
-	3. git commit  提交
+	3. git commit -m "提示信息" 提交
+	
+二、基础命令 status diff
+	1. git status 
+		查看仓库当前状态。
+	2. git diff <filename>
+		查看具体文件修改内容
