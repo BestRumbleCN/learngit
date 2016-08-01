@@ -52,4 +52,12 @@
 		git rm <filename>
 		git commit -m "remove filename"
 		
+七、远程库
+	1. 本地推送到远程库
+		①关联远程库 git remote add origin https://github.com/BestRumbleCN/learngit.git
+		②第一次推送master分支 git push -u origin master
+		③推送最新修改 git push origin master
+	2. 从远程库克隆
+		git clone https://github.com/BestRumbleCN/learngit.git
+		
 		
