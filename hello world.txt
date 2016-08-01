@@ -28,4 +28,18 @@
 	2. 工作区就是我们平时写的代码,如hello world.txt
 	3. 版本库分为 暂存区（stage）和分支（branch）
 	4. git add 工作区→暂存区 git commit 暂存区→分支
+
+五、撤销操作
+	1. 修改后 未add（添加到暂存区） 需要撤销修改时：
+        git checkout -- myfile.txt 或 手动删除工作区修改
+        工作区 ： clean  暂存区： clean
+	2. 修改后 add了（未commit） 再次修改文件  要撤销第二次修改时：
+        git checkout -- myfile.txt (将暂存区恢复到工作区)
+        暂存区有第一次的修改需要commit
+	3. 修改后 add了（未commit），需要撤销修改时：
+        git reset HEAD myfile.txt (将暂存区修改删除)
+        此时工作区的修改还未撤销
+        git checkout -- myfile.txt (撤销工作区修改)
+	4. 修改后 add并commit了，需要撤销修改时：
+        git reset --hard HEAD^  (版本回退)**
 		
