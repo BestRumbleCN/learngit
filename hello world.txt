@@ -83,7 +83,29 @@
 		2.git stash pop（恢复并删除stash）
 	4.可多次stash，恢复的时候使用 git stash list 查看，
 	  恢复指定stash使用 git stash apply stash{0}
-	
+
+十二、多人协作
+	1.首先，试图推送自己的修改
+		git push origin <branchName>
+	2.如果推送失败，远程分支有新版本
+		git pull
+	3.如果有冲突，则解决冲突，并在本地提交
+	4.再次提交
+		git push origin <branchName>
+	5.在本地创建和远程分支同步的分支
+		git checkout -b <branchName> origin/<branchName> 等价于
+		①git checkout -b <branchName>  ②git pull origin <branchName>
+
+十三、标签
+	1.创建标签
+		git tag －a “v1.0” -m “git learning version 1.0”
+	2.推送标签
+		git push origin v1.0  /   git push origin —tags
+	3.删除标签
+		git tag －d v1.0
+	4.删除远程标签
+		its push origin :refs/tags/v1.0
+		
 		
 		
 		
